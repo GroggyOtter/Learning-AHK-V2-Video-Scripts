@@ -1,0 +1,22 @@
+Download links:
+
+-AutoHotkey v2 installer:
+https://www.autohotkey.com/download/ahk-v2.exe
+
+-AutoHotkey v2 standalone:
+https://www.autohotkey.com/download/ahk-v2.zip
+
+-VS Code:
+https://code.visualstudio.com/download#
+
+-VS Code AutoHotkey v2 Language Support:
+https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp
+
+-VS Code Color Scheme "Expressive Theme":
+https://marketplace.visualstudio.com/items?itemName=Gaulomatic.VSCodeExpressiveTheme
+
+-VS Code Color Scheme "Dark Theme by Sanan":
+https://marketplace.visualstudio.com/items?itemName=Sanan4li.dark-theme-by-sanan
+
+-VS Code Color Scheme "Sunset Theme":
+https://marketplace.visualstudio.com/items?itemName=swiip.sunset-theme
