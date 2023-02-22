@@ -1,4 +1,4 @@
-; Programming Convetions - Indentation styles:
+; Programming Conventions - Indentation styles:
 
 ; Additional reading
 ; https://en.wikipedia.org/wiki/Indentation_style
