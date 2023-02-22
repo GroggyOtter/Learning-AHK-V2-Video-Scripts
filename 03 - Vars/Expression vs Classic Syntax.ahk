@@ -12,9 +12,10 @@ var  := num              ; Assign a variable
 ; ==========================
 ; DO NOT DO THIS IN V2 CODE!
 ; ==========================
-; This is classic syntax and is the old v1 way to do stuff
-; This is just to teach you what it used to look like
-; These do not work in AHK v2
+; This is called classic or legacy syntax
+; This is the old v1 way of handling variables
+; I'm including it for educational reasons only
+; This syntax does not work in v2 and should not be used
 
 str = Hello, world!     ; Assign a string
 num = 3.14              ; Assign a number
