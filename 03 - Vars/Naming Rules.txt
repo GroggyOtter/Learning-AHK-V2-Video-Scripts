@@ -65,7 +65,7 @@ List of reserved words (not to be used as variable names):
   - While
 
 
-Examples of short but meaningful variable names:
+Examples of meaningful, short variable names:
 str := "smaller strings"
 txt := 'larger strings'
 num := 3.14159
@@ -73,17 +73,20 @@ arr := ['array', 'example']
 obj := {a:"an", b:"object", c:"example"}
 mp  := Map("m","Map", "e","Example")
 
+A note on using single chars for vars:
 Single character varaibles aren't normally a good idea.
 However, they can be smart things to utilize in 1-time-use scenarios
-When using a for-loop to iterate through an array or map, the variables
-you define are only applicable inside of that loop.
+Example: When using a for-loop to iterate through arrays/maps,
+the variables you define are only applicable inside of that loop.
 Things like i, k, and v (representing index, key, and value) make sense
-because you won't need them later/can't use them later.
+to use because you won't need them later. You CAN'T use them later.
 
+;Array example:
 arr := ["apple", "banana", "cherry"]
 For i, v in arr
     MsgBox(i ":" v)
 
+;Map example:
 mp := map("a","alpha", "b","beta", "g","gamma")
 For k, v in mp
     MsgBox(k ":" v)
