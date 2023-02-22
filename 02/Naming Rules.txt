@@ -1,0 +1,89 @@
+Naming rules for AHK v2:
+
+Info can be found here:
+https://www.autohotkey.com/docs/v2/Concepts.htm#names
+
+These naming conventions apply to EVERYTHING in AutoHotkey:
+- Variables
+- Functions
+- Window groups
+- Classes
+- Properties
+- Methods
+
+Max name size:
+253
+
+Allowed characters:
+- Alphabetic characters
+  abcdefghijklmnopqrstuvwxyz
+  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+- Numbers:
+  0123456789
+
+- Special characters:
+  The _ (Underscore) character is the only useable special ASCII char
+  Any unicode character past the first 127 ASCII chars can be used
+
+Rules to remember:
+  - The first character must never be a number
+  - AHK is not a strictly typed lanugage (capitals and lowercase are the same)
+    - The varaibles "Num" "NUM" and "num" are all the same variable
+  - There is a list of reserved words that should never be used
+    - That list of words is covered below
+
+List of reserved words (not to be used as variable names):
+  - AND
+  - as
+  - Break
+  - Catch
+  - contains
+  - Continue
+  - Else
+  - false
+  - Finally
+  - For
+  - Global
+  - Goto
+  - If
+  - in
+  - is
+  - IsSet
+  - Local
+  - Loop
+  - NOT
+  - OR
+  - Return
+  - Static
+  - super
+  - Throw
+  - true
+  - Try
+  - unset
+  - Until
+  - While
+
+
+Examples of short but meaningful variable names:
+str := "smaller strings"
+txt := 'larger strings'
+num := 3.14159
+arr := ['array', 'example']
+obj := {a:"an", b:"object", c:"example"}
+mp  := Map("m","Map", "e","Example")
+
+Single character varaibles aren't normally a good idea.
+However, they can be smart things to utilize in 1-time-use scenarios
+When using a for-loop to iterate through an array or map, the variables
+you define are only applicable inside of that loop.
+Things like i, k, and v (representing index, key, and value) make sense
+because you won't need them later/can't use them later.
+
+arr := ["apple", "banana", "cherry"]
+For i, v in arr
+    MsgBox(i ":" v)
+
+mp := map("a","alpha", "b","beta", "g","gamma")
+For k, v in mp
+    MsgBox(k ":" v)
